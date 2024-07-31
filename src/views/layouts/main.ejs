@@ -4,7 +4,7 @@
 <head>
 
 	<!-- Basic Page Needs ================================================== -->
-	<title>Hireo</title>
+	<title><%- title %></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -18,13 +18,11 @@
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="wrapper-with-transparent-header">
-        <% include('header') %>
-        <% include('./header') %>
-
-        <!-- <%- body %> -->
-
-        <% include('./footer') %>
+		<%- include('./header') %>
+		<%- include(body) %>
+		<%- include('./footer') %>
 	</div>
+	
 	<!-- Wrapper / End -->
 
 
