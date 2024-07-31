@@ -10,6 +10,7 @@ const ServiceController = require('../controllers/ServiceController');
 router.get('/', HomeController.Index);
 //Service Route
 router.get('/services', ServiceController.Index);
+router.get('/service-details', ServiceController.Details);
 
 // // Auth routes
 router.get('/register', AuthController.Register);
