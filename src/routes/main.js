@@ -4,6 +4,7 @@ const router = express.Router();
 const HomeController = require('../controllers/HomeController');
 const AuthController = require('../controllers/AuthController');
 const ServiceController = require('../controllers/ServiceController');
+const DashboardController = require('../controllers/DashboardController');
 
 
 // Main routes
@@ -11,6 +12,8 @@ router.get('/', HomeController.Index);
 //Service Route
 router.get('/services', ServiceController.Index);
 router.get('/service-details', ServiceController.Details);
+
+router.get('/dashboard', DashboardController.Index);
 
 // // Auth routes
 router.get('/register', AuthController.Register);
