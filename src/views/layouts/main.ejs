@@ -39,6 +39,13 @@
 	<script src="/js/slick.min.js"></script>
 	<script src="/js/custom.js"></script>
 
+
+	
+	<% if (typeof js !== 'undefined' && js) { %>
+		<script src="/js/pages/<%= js %>"></script>
+	<% } %>
+	
+
 </body>
 
 </html>

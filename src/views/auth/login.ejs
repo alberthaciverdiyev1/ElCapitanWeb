@@ -34,29 +34,41 @@
 					<h3>We're glad to see you again!</h3>
 					<span>Don't have an account? <a href="/register">Sign Up!</a></span>
 				</div>
-					
+
 				<!-- Form -->
-				<form method="post" id="login-form">
+				<form>
 					<div class="input-with-icon-left">
 						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
+						<input type="text" class="input-text with-border" name="emailaddress" id="email"
+							placeholder="Email Address" required />
 					</div>
 
 					<div class="input-with-icon-left">
 						<i class="icon-material-outline-lock"></i>
-						<input type="password" class="input-text with-border" name="password" id="password" placeholder="Password" required/>
+						<input type="password" class="input-text with-border" name="password" id="password"
+							placeholder="Password" required />
 					</div>
-					<a href="#" class="forgot-password">Forgot Password?</a>
+					<div class="d-flex justify-content-between align-items-center">
+
+						<div class="checkbox">
+							<input type="checkbox" id="remember_me" checked="">
+							<label for="remember_me"><span class="checkbox-icon"></span> Remember me</label>
+						</div>
+						<a href="#" class="forgot-password">Forgot Password?</a>
+					</div>
 				</form>
-				
+
 				<!-- Button -->
-				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
-				
+				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="button"
+					data-role="login">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
+
 				<!-- Social Login -->
 				<div class="social-login-separator"><span>or</span></div>
 				<div class="social-login-buttons">
-					<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via Facebook</button>
-					<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
+					<button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Log In via
+						Facebook</button>
+					<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via
+						Google+</button>
 				</div>
 			</div>
 
