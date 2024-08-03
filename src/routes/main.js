@@ -14,6 +14,7 @@ router.get('/services', ServiceController.Index);
 router.get('/service-details', ServiceController.Details);
 
 router.get('/dashboard', DashboardController.Index);
+router.get('/settings', DashboardController.Setting);
 
 // // Auth routes
 router.get('/register', AuthController.Register);
